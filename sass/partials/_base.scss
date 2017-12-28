@@ -1,0 +1,16 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $darkGrey;
+}
+.container {
+  max-width: 1495px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+*{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
