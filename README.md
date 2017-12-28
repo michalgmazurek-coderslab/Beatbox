@@ -1,5 +1,6 @@
 # Beatbox
 
+Simple project in React - just for fun :)
 
 
 
