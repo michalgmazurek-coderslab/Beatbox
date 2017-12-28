@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
 
-gulp.task('scss-prod', function() {
+gulp.task('sass-prod', function() {
     return gulp.src('sass/**/*.scss')
         .pipe(sass ({
             errLogConsole: true,
@@ -24,7 +24,7 @@ gulp.task('scss-prod', function() {
 		.pipe(gulp.dest('public/css'))
 })
 
-gulp.task('scss-dev', function() {
+gulp.task('sass-dev', function() {
     return gulp.src('sass/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass ({
@@ -48,13 +48,13 @@ gulp.task('scss-dev', function() {
 })
 
 
-gulp.task('serve', ['scss-dev'], function() {
-    gulp.watch('sass/**/*.scss', ['scss-dev'])
+gulp.task('serve', ['sass-dev'], function() {
+    gulp.watch('sass/**/*.scss', ['sass-dev'])
 });
 
 // gulp.task('serve', () => {
 //
 //   gulp.watch("sass/**/*.scss", function(event){
-//     gulp.run('scss-dev');
+//     gulp.run('sass-dev');
 //   });
 // });
