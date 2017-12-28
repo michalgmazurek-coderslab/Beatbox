@@ -1,6 +1,19 @@
 import React, {Component} from 'react';
 
 class App extends Component {
+  playSounds = (number) => {
+    document.querySelector('#btn-' + number).addEventListener("mousedown", () => {
+      console.log('Działa');
+      var audio = new Audio('sounds/'+number+'.mp3');
+      audio.play();
+    });
+  }
+  componentDidMount() {
+    let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    for (var i = 0; i < arr.length; i++) {
+      this.playSounds(arr[i]);
+    }
+  }
   render() {
     return (<div className="beatbox">
       <div className="beatbox__container">
