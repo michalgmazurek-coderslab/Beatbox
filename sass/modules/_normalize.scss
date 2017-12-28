@@ -19,11 +19,3 @@ button {
 	border: none;
 	cursor: pointer;
 }
-
-input {
-	outline: none;
-
-	&:focus {
-		border-color: $yellow !important;
-	}
-}
