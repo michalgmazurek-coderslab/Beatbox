@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 class App extends Component {
   playSounds = (number) => {
-    document.querySelector('#btn-' + number).addEventListener("mousedown", () => {
-      console.log(document.querySelectorAll('audio')[number-1]);
-      console.log(number);
+    document.querySelector('#btn-' + number).addEventListener("click", () => {
       document.querySelectorAll('audio')[number-1].play();
       // Added audio elements in HTML to improve performance on mobile devices.
       // var audio = new Audio('sounds/' + number + '.mp3');
