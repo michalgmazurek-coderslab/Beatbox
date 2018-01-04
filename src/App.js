@@ -3,10 +3,10 @@ import React, {Component} from 'react';
 class App extends Component {
   playSounds = (number) => {
     document.querySelector('#btn-' + number).addEventListener("click", () => {
-      document.querySelectorAll('audio')[number-1].play();
-      // Added audio elements in HTML to improve performance on mobile devices.
-      // var audio = new Audio('sounds/' + number + '.mp3');
-      // audio.play();
+      let audio = document.createElement("audio");
+      audio.src = "sounds/" + number + '.mp3';
+      audio.currentTime=0;
+      audio.play();
     });
   }
   componentDidMount() {
@@ -17,26 +17,26 @@ class App extends Component {
   }
   render() {
     return (<div className="beatbox">
-      <audio src="sounds/1.mp3"></audio>
-      <audio src="sounds/2.mp3"></audio>
-      <audio src="sounds/3.mp3"></audio>
-      <audio src="sounds/4.mp3"></audio>
-      <audio src="sounds/5.mp3"></audio>
-      <audio src="sounds/6.mp3"></audio>
-      <audio src="sounds/7.mp3"></audio>
-      <audio src="sounds/8.mp3"></audio>
-      <audio src="sounds/9.mp3"></audio>
-      <audio src="sounds/10.mp3"></audio>
-      <audio src="sounds/11.mp3"></audio>
-      <audio src="sounds/12.mp3"></audio>
-      <audio src="sounds/13.mp3"></audio>
-      <audio src="sounds/14.mp3"></audio>
-      <audio src="sounds/15.mp3"></audio>
-      <audio src="sounds/16.mp3"></audio>
-      <audio src="sounds/17.mp3"></audio>
-      <audio src="sounds/18.mp3"></audio>
-      <audio src="sounds/19.mp3"></audio>
-      <audio src="sounds/20.mp3"></audio>
+      <audio src="sounds/1.mp3" preload="true"></audio>
+      <audio src="sounds/2.mp3" preload="true"></audio>
+      <audio src="sounds/3.mp3" preload="true"></audio>
+      <audio src="sounds/4.mp3" preload="true"></audio>
+      <audio src="sounds/5.mp3" preload="true"></audio>
+      <audio src="sounds/6.mp3" preload="true"></audio>
+      <audio src="sounds/7.mp3" preload="true"></audio>
+      <audio src="sounds/8.mp3" preload="true"></audio>
+      <audio src="sounds/9.mp3" preload="true"></audio>
+      <audio src="sounds/10.mp3" preload="true"></audio>
+      <audio src="sounds/11.mp3" preload="true"></audio>
+      <audio src="sounds/12.mp3" preload="true"></audio>
+      <audio src="sounds/13.mp3" preload="true"></audio>
+      <audio src="sounds/14.mp3" preload="true"></audio>
+      <audio src="sounds/15.mp3" preload="true"></audio>
+      <audio src="sounds/16.mp3" preload="true"></audio>
+      <audio src="sounds/17.mp3" preload="true"></audio>
+      <audio src="sounds/18.mp3" preload="true"></audio>
+      <audio src="sounds/19.mp3" preload="true"></audio>
+      <audio src="sounds/20.mp3" preload="true"></audio>
       <div className="beatbox__container">
         <div className="beatbox__sound-btn" id="btn-1"></div>
         <div className="beatbox__sound-btn" id="btn-2"></div>
