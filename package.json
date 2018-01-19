@@ -1,7 +1,8 @@
 {
-  "name": "beatbox",
+  "name": "Beatbox",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://michalgmazurek-coderslab.github.io/Beatbox/",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
