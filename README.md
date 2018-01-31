@@ -2,7 +2,7 @@
 
 Simple project in React - just for fun :)
 
-My project: [https://michalgmazurek-coderslab.github.io/Beatbox/](https://michalgmazurek-coderslab.github.io/Beatbox/)
+My project: [https://michalgmazurek.github.io/Beatbox/](https://michalgmazurek.github.io/Beatbox/)
 
 
 # References
